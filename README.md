@@ -43,7 +43,7 @@ After preprocessing, we selected **relevant features** to improve model accuracy
 ### **📍 Phase 4: Final Model Selection & Deployment**  
 - Selected the **best-performing model** based on evaluation metrics  
 - Built a **machine learning pipeline** for deployment  
-- **Saved the final model** using `joblib`  
+- **Saved the final model** 
 
 ---
 
@@ -53,11 +53,6 @@ After preprocessing, we selected **relevant features** to improve model accuracy
 - Feature selection significantly **improved classification accuracy**  
 - **Gradient Boosting** performed better than Random Forest for this dataset  
 - Some features (e.g., **Electric Range**) had a strong impact on classification  
-
-### **🔹 Developed Model**  
-The best model selected: **Gradient Boosting Classifier**  
-- Accuracy: **XX%**  
-- F1-Score: **XX%**  
 
 ### **🔹 Recommendations for Improving Subscription Rates**  
 - **Increase model interpretability** using SHAP values  
