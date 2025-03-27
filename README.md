@@ -1,75 +1,74 @@
-Bank Marketing Term Deposit Prediction Model
+# Electric Vehicle Classification Project
 
-Project Overview
+## 📌 Project Overview  
+This project focuses on **predicting the type of Electric Vehicle (BEV vs. PHEV)** using **feature selection** and **machine learning models** while optimizing memory usage. The goal is to build an efficient classification model that provides accurate predictions based on vehicle characteristics.
 
-This project focuses on predicting whether a customer will subscribe to a bank term deposit using machine learning techniques. The dataset includes various customer attributes, campaign details, and economic indicators.
+---
 
-Project Phases
+## 📊 Dataset  
+The dataset contains various attributes related to electric vehicles, such as:  
+- **Vehicle Make & Model**  
+- **Electric Vehicle Type (BEV or PHEV) - Target Variable**  
+- **Electric Range**  
+- **Base MSRP**  
+- **Clean Alternative Fuel Vehicle (CAFV) Eligibility**  
+- **Legislative District & Electric Utility**  
 
-📌 Phase 2: Data Preprocessing & Cleaning
+After preprocessing, we selected **relevant features** to improve model accuracy.
 
-Handled missing values and inconsistencies.
+---
 
-Performed feature engineering.
+## ⚙️ Project Phases  
 
-Encoded categorical variables.
+### **📍 Phase 1: Data Preprocessing & Feature Selection**  
+- Handled **missing values** and **duplicates**  
+- **Encoded categorical variables**  
+- **Performed feature selection** to reduce dimensionality  
+- Split dataset into **training (X_train, y_train) and testing sets (X_test, y_test)**  
 
-Scaled numerical features for better model performance.
+### **📍 Phase 2: Exploratory Data Analysis (EDA)**  
+- **Visualized class distributions** (BEV vs. PHEV)  
+- **Analyzed correlations** between features  
+- **Detected outliers** to refine data quality  
 
-Detected and removed outliers.
+### **📍 Phase 3: Model Training & Evaluation**  
+- Tested multiple classification models:  
+  - **Random Forest**  
+  - **Gradient Boosting**  
+- Applied **Hyperparameter Tuning (GridSearchCV)**  
+- Evaluated models using:  
+  - **Accuracy, Precision, Recall, and F1-score**  
+  - **Confusion Matrix & Classification Reports**  
 
-📌 Phase 3: Exploratory Data Analysis (EDA)
+### **📍 Phase 4: Final Model Selection & Deployment**  
+- Selected the **best-performing model** based on evaluation metrics  
+- Built a **machine learning pipeline** for deployment  
+- **Saved the final model** using `joblib`  
 
-Analyzed numerical & categorical features.
+---
 
-Performed correlation analysis to remove redundant features.
+## 🏆 Conclusion  
 
-Addressed data imbalance using SMOTE.
+### **🔹 Key Findings**  
+- Feature selection significantly **improved classification accuracy**  
+- **Gradient Boosting** performed better than Random Forest for this dataset  
+- Some features (e.g., **Electric Range**) had a strong impact on classification  
 
-Selected the most relevant features for classification.
+### **🔹 Developed Model**  
+The best model selected: **Gradient Boosting Classifier**  
+- Accuracy: **XX%**  
+- F1-Score: **XX%**  
 
-Split the dataset into training and testing sets.
+### **🔹 Recommendations for Improving Subscription Rates**  
+- **Increase model interpretability** using SHAP values  
+- **Collect more diverse EV data** to improve generalization  
+- Implement **real-time prediction system**  
 
-📌 Phase 4: Model Selection & Training
+### **🔹 Future Recommendations**  
+- Explore **Deep Learning models** for better accuracy  
+- Integrate the model into a **web-based dashboard** for user interaction  
 
-Trained Random Forest and Gradient Boosting classifiers.
+---
 
-Used GridSearchCV for hyperparameter tuning.
-
-Compared model performance and selected the best-performing model.
-
-Saved the trained model and pipeline.
-
-Evaluated predictions using classification reports and confusion matrices.
-
-Conclusion
-
-🔍 Key Findings
-
-The dataset had an imbalance in target classes, which was handled using SMOTE.
-
-Correlation analysis helped in selecting the most impactful features.
-
-Gradient Boosting performed better than Random Forest in terms of accuracy.
-
-🛠️ Developed Model
-
-The final model chosen was Gradient Boosting Classifier, tuned with optimal hyperparameters.
-
-The trained model and pipeline were saved for deployment.
-
-📈 Recommendations for Improving Subscription Rates
-
-Target customers based on high-impact features like age, campaign duration, and previous contacts.
-
-Improve personalized marketing strategies based on customer behavior.
-
-Optimize the number of calls to avoid customer fatigue.
-
-🚀 Future Recommendations
-
-Implement Deep Learning models to further improve accuracy.
-
-Use real-time data and retrain the model periodically.
-
-Integrate the model into a web-based dashboard for business insights.
+## 🙌 Thank You!  
+For any questions or collaboration, feel free to reach out. 🚀  
